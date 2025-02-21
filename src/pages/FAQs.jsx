@@ -52,7 +52,7 @@ const FAQsPage = () => {
           </details>
   
           <details className="mb-4 bg-white p-4 rounded-lg shadow-md">
-            <summary className="font-semibold cursor-pointer">Do you offer refunds?</summary>
+            <summary className="font-semibold cursor-pointer">Do you offer refund?</summary>
             <p className="mt-2 text-gray-600">Yes, we offer a 7-day money-back guarantee for paid courses.</p>
           </details>
         </div>
