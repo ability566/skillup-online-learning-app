@@ -96,12 +96,12 @@ const DashboardOverview = () => {
         <PieChart data={pieChartData} />
       </div>
 
-      <div className="w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
+      <div className="w-full md:w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Course Engagement Metrics</h3>
         <BarChart data={barChartData} />
       </div>
 
-      <div className="w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
+      <div className="w-full md:w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Recent Student Sign-ups</h3>
         <ul className="space-y-2">
           {recentSignUps.map((student, index) => (
@@ -113,7 +113,7 @@ const DashboardOverview = () => {
         </ul>
       </div>
 
-      <div id="reports" ref={reportRef} className="w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
+      <div id="reports" ref={reportRef} className="w-full md:w-3/4 mx-auto mt-6 p-6 bg-white shadow-md rounded-lg">
         <h3 className="text-xl font-semibold text-blue-700 mb-3">Weekly & Monthly Reports</h3>
         <div className="flex gap-4 mb-4">
           <button className={`px-4 py-2 rounded-lg ${reportType === "weekly" ? "bg-blue-700 text-white" : "bg-gray-300"}`} onClick={() => setReportType("weekly")}>

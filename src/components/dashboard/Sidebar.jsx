@@ -42,7 +42,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
       <aside
         className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white p-6 shadow-lg transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-64"
-        }`}
+        } opacity-100`}
+        style={{ zIndex: 50 }}
       >
         <h2 className="text-xl font-semibold mt-12">Admin Dashboard</h2>
         <hr className="my-4 border-gray-600" />
