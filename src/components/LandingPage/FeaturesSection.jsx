@@ -10,7 +10,7 @@ const FeaturesSection = () => {
     },
     {
       title: "Career Support",
-      description: "Receive resume reviews, job placement assistance, and interview coaching.",
+      description: "Receive resume review, job placement assistance, and interview coaching.",
     },
     {
       title: "Flexible Learning",
