@@ -16,7 +16,7 @@ const AboutSection = () => {
           With our dedicated <span className="font-semibold">career support</span>, students receive resume-building assistance, interview coaching, and job placement services. We collaborate with top employers to connect our graduates with real job opportunities.
         </p>
         <p className="mt-4 text-gray-700">
-          Join our global community of aspiring data professionals and unlock new career opportunities with SkillUp Academy. Take the first step towards a future in data analytics today!
+          Join our global community of aspiring data professionals and unlock new career opportunities with SkillUp Academy. Take the first step towards a future in data analytics today!!
         </p>
       </div>
     </section>
