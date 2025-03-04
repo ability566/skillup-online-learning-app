@@ -1,3 +1,6 @@
+import React from "react";
+import { ReactTyped } from "react-typed";
+
 const HeroSection = () => {
 
     const scrollToForm = () => {
@@ -19,7 +22,23 @@ const HeroSection = () => {
         </div>
   
         <div className="relative z-10">
-          <h1 className="text-5xl font-bold">Master Data Analytics with SkillUp Academy</h1>
+          <h1 className="text-3xl font-bold md:text-5xl sm:text-4xl">Master Data Analytics with SkillUp Academy</h1>
+
+          <div  className="font-bold mt-5 flex justify-center items-center text-lg">
+          <h3>Flexible and Affordable learning with   </h3>
+          <ReactTyped className="pl-1"
+            strings={[
+              "R",
+              "SQL",
+              "PYTHON",
+              "POWER BI"
+            ]}
+            typeSpeed={100}
+            backSpeed={90}
+            loop
+          />
+          </div>
+
           <p className="text-lg mt-4">Join thousands of learners worldwide.</p>
   
           <button onClick={scrollToForm} className="bg-blue-500 text-white mt-7 px-4 py-4 rounded-md hover:bg-blue-600

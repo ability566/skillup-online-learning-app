@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi"; // Import icons for the menu toggle
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ const Nav = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false); // Close menu after clicking a link
+      setIsMenuOpen(false);
     }
   };
 
@@ -44,7 +44,6 @@ const Nav = () => {
         SkillUp Academy
       </Link>
 
-      {/* Desktop Menu (Hidden on mobile) */}
       <div className="hidden md:flex items-center space-x-6 ml-auto">
         <button
           onClick={() => handleScroll("about")}
@@ -75,7 +74,6 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Mobile Menu Button (Only visible on small screens) */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className="md:hidden ml-auto text-white text-2xl focus:outline-none"
@@ -83,9 +81,10 @@ const Nav = () => {
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </button>
 
-      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-gray-700 text-white flex flex-col items-center py-4 space-y-4 shadow-md md:hidden">
+        <div className="absolute top-full left-0 w-full bg-gray-700 text-white 
+          flex flex-col items-center py-4 space-y-4 
+          shadow-md md:hidden">
           <button onClick={() => handleScroll("about")} className="hover:underline">
             About Us
           </button>
